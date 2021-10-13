@@ -6,10 +6,17 @@
 - Manipulação declarativa do DOM através de template
 - Template dinâmico
 
-A View das negociações, que renderiza uma tabela, depende diretamente da classe `Negociacoes` para construir o template, então a recebemos como parâmetro nos métodos `template()` e `update()`. Chamamos o método `update()` no construtor de `NegociacaoController` e no método `adiciona()`.
+A View das negociações, que renderiza uma tabela, depende diretamente da classe `Negociacoes` para construir o template, então a recebemos uma instância dela como parâmetro dos métodos `template()` e `update()`. Chamamos o método `update()` no `constructor()` e no método `adiciona()` de `NegociacaoController`, ou seja, ao carregar a página e depois de adicionar uma nova negociação.
 
 - Formatação de datas usando Intl
 
 ```js
   new Intl.DateTimeFormat().format(negociacao.data)
 ```
+
+## Módulo 2
+
+- Herança com TypeScript
+- Classes com tipo genérico
+- Classes abstratas
+- O modificador protected
