@@ -20,3 +20,10 @@ A View das negociações, que renderiza uma tabela, depende diretamente da class
 - Classes com tipo genérico
 - Classes abstratas
 - O modificador protected
+
+## Módulo 3
+
+- Visibilidade de métodos
+- Validando negociações em dias úteis
+- Vantagens do uso de enums
+- Cuidados com enums
