@@ -80,3 +80,38 @@ Perceba que precisamos repetir o tipo definido nos outros lugares que foi utiliz
 - Revisão da lógica de conversão de negociações
 - Método estáticos
 - Parâmetros opcionais
+
+## Módulo 5
+
+- Remoção de comentários do código compilado
+
+Adicionar essa configuração em `compilerOptions`:
+
+```json
+    "removeComments": true
+```
+
+- Ativação do `strictNullChecks`
+
+Adicionar essa configuração em `compilerOptions`:
+
+```json
+    "strictNullChecks": true
+```
+
+- Como suprimir erros, quando fizer sentido, resultantes do `strictNullChecks`
+- Benefícios do strictNullChecks no controle do fluxo da sua aplicação
+
+Às vezes não faz muito sentido tratar possíveis erros provenientes do `strictNullChecks`, como em alguns seletores de elementos HTML, nesse caso podemos realizar um *casting* como abaixo:
+
+```ts
+const input = document.querySelector('input') as HTMLInputElement;
+```
+
+Ou:
+
+```ts
+const input = <HTMLInputElement>document.querySelector('input');
+```
+
+Em outros casos pode ser interessante tratar o erro, lançando uma mensagem de erro ou substituindo algum valor da aplicação.
