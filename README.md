@@ -100,7 +100,7 @@ Adicionar essa configuração em `compilerOptions`:
 ```
 
 - Como suprimir erros, quando fizer sentido, resultantes do `strictNullChecks`
-- Benefícios do strictNullChecks no controle do fluxo da sua aplicação
+- Benefícios do `strictNullChecks` no controle do fluxo da sua aplicação
 
 Às vezes não faz muito sentido tratar possíveis erros provenientes do `strictNullChecks`, como em alguns seletores de elementos HTML, nesse caso podemos realizar um *casting* como abaixo:
 
